@@ -125,13 +125,14 @@
 			}
 , 			{
 				"box" : 				{
+					"hidden" : 1,
 					"id" : "obj-60",
 					"linecount" : 6,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 972.0, 1309.0, 758.0, 89.0 ],
+					"patching_rect" : [ 972.0, 1309.0, 760.0, 89.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 18,
 					"presentation_rect" : [ 389.666673719882965, 616.0, 259.0, 250.0 ],
@@ -2585,7 +2586,7 @@
 					"patching_rect" : [ 333.666665375232697, 702.92537260055542, 136.666669249534607, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 11.333330750465393, 118.92537260055542, 78.916669249534607, 22.0 ],
-					"text" : "connected"
+					"text" : "disconnected"
 				}
 
 			}
@@ -2801,26 +2802,6 @@
 			}
 , 			{
 				"box" : 				{
-					"#init" : "",
-					"#loadbang" : 0,
-					"#triggerall" : 0,
-					"#untuple" : 0,
-					"fontface" : 0,
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"ftm_objref_conv" : 0,
-					"ftm_scope" : 3,
-					"id" : "obj-20",
-					"maxclass" : "ftm.mess",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 630.0, 344.0, 66.01171875, 18.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-18",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -2977,8 +2958,6 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
-						"node_bin_path" : "",
-						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -3568,10 +3547,6 @@
 				"bootpath" : "C74:/packages/Node For Max/patchers/debug-monitor",
 				"type" : "TEXT",
 				"implicit" : 1
-			}
-, 			{
-				"name" : "ftm.mess.mxo",
-				"type" : "iLaX"
 			}
  ],
 		"autosave" : 0,

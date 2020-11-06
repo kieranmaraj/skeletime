@@ -11,7 +11,7 @@ const SOCKET_PORT = 5000; //Port for the websocket server to handle connections
 
 let broadcastMethod = 0; // 0 for internet, 1 for local
 let socket = io(`https://skeleweb.herokuapp.com`);
-// let socketLocal = io(`http://localhost:${SOCKET_PORT}`)
+// let socket = io(`http://localhost:${SOCKET_PORT}`)
 
 
 const server = dgram.createSocket('udp4');  // socket to receive data from mediapipe
