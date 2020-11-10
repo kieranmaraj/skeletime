@@ -13,6 +13,7 @@
     "fs": "0.0.1-security",
     "javascript-state-machine": "^3.1.0",
     "path": "^0.12.7",
+    "socket.io-client": "^3.0.1",
     "uuid": "^8.1.0",
     "viz.js": "^2.1.2"
   }
