@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 61.0, 44.0, 894.0, 788.0 ],
+		"rect" : [ 582.0, 53.0, 894.0, 788.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -122,7 +122,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 485.0, 754.666660249233246, 50.0, 35.0 ],
+					"patching_rect" : [ 484.0, 732.833320498466492, 50.0, 35.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 424.0, 497.666660249233246, 90.0, 22.0 ],
 					"text" : "192.168.0.100"
@@ -281,16 +281,16 @@
 				"box" : 				{
 					"dontreplace" : 1,
 					"id" : "obj-60",
-					"linecount" : 23,
+					"linecount" : 35,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 40.0, 742.666660249233246, 159.0, 317.0 ],
+					"patching_rect" : [ 40.0, 742.666660249233246, 159.0, 478.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 7,
-					"presentation_rect" : [ 396.0, 587.0, 434.0, 102.0 ],
-					"text" : "/full 0.586242 0.814411 0.076175 0.806753 0.654035 1.533486 -0.000173 1.415888 0.436881 1.888784 0.019682 1.810732 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.28749 0.911725 -0.053399 0.239885 0.854892 -0.101911 0.320816 0.912031 -0.134359 0.239741 0.822277 -0.199345 0.327512 0.918721 -0.13716 0.230788 0.813848 -0.217837 0.326516 0.929716 -0.13375 0.225943 0.83354 -0.206274 0.320744 0.944129 -0.128681 0.233978 0.88497 -0.178717"
+					"presentation_linecount" : 10,
+					"presentation_rect" : [ 396.0, 587.0, 434.0, 143.0 ],
+					"text" : "/full 0.725661 0.308331 0.290295 0.357503 0.855919 0.690442 0.155478 0.688659 0.808893 0.813896 0.128244 0.843333 0.134866 0.917204 -0.082636 0.171999 0.841311 -0.130905 0.116986 0.950522 -0.108715 0.180381 0.817548 -0.272271 0.086185 0.968816 -0.104809 0.155488 0.807211 -0.305278 0.053841 0.977437 -0.101103 0.116871 0.826099 -0.329832 0.022855 0.983838 -0.093231 0.060413 0.882062 -0.248405 0.087003 0.46894 0.042208 0.118098 0.375316 0.030882 0.07732 0.442068 -0.07015 0.163468 0.299317 -0.131009 0.076997 0.47466 -0.106373 0.216469 0.369635 -0.157294 0.087319 0.518233 -0.13624 0.2376 0.44589 -0.169325 0.104201 0.563265 -0.161435 0.230834 0.512727 -0.183608"
 				}
 
 			}
@@ -859,6 +859,8 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
+						"node_bin_path" : "",
+						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -873,10 +875,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 396.0, 3.5, 231.0, 74.0 ],
+					"patching_rect" : [ 396.0, 3.5, 232.0, 74.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 5,
-					"presentation_rect" : [ 571.0, 16.666673362255096, 231.0, 74.0 ],
+					"presentation_rect" : [ 571.0, 16.666673362255096, 232.0, 74.0 ],
 					"text" : "This patch receives data from the skeletime medipipe app, parses that data and sends it to the skeletime.CLASSIFY patch. The vector of filtered data can also be locally broadcast via UDP"
 				}
 
@@ -1056,6 +1058,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-28", 0 ],
+					"source" : [ "obj-30", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
 					"source" : [ "obj-32", 0 ]
 				}
@@ -1188,6 +1197,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-21", 0 ],
+					"source" : [ "obj-51", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-50", 0 ],
 					"source" : [ "obj-53", 0 ]
 				}
@@ -1211,6 +1227,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
 					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-21", 0 ],
+					"source" : [ "obj-60", 0 ]
 				}
 
 			}
