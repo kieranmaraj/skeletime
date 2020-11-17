@@ -1,6 +1,34 @@
 var protobuf = require('protobufjs');
 const dgram = require('dgram');
 const maxApi = require('max-api');
+const io = require("socket.io-client");
+let socket = io(`https://skeleweb.herokuapp.com`);
+
+let typeInfo = {
+    type : 'local',
+    active: false
+};
+
+socket.on("connect", () => {
+    console.log("connected: " + socket.connected);
+    typeInfo.active = true;
+    maxApi.outlet("/connection connected");
+});
+
+socket.on("getType", ()=>{
+// console.log("received get type message");
+socket.emit("assignType", typeInfo.type);
+});
+
+socket.on("disconnect", ()=>{
+    maxApi.outlet("/connection disconnected");
+    typeInfo.active = false;
+});
+
+function broadcast_skeleton(){
+    socket.emit("skeleton", JSON.stringify(DATA));
+}
+
 
 const server = dgram.createSocket('udp4');  // socket to receive data from mediapipe
 
@@ -109,6 +137,8 @@ async function parseMsg(msg){
             skeletimeToListFunctions[featNdx](featNdx, DATA[prop]);
     
         }
+
+        broadcast_skeleton();
 
         outputData();
     

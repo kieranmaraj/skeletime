@@ -15,5 +15,13 @@
     "ws": "^7.3.1"
   },
   "devDependencies": {},
-  "description": ""
+  "description": "Repo containing main patches for a system for classifying and broadcasting out EAO sound painting gestures. This repo DOES NOT contain the mediapipe skeletime app OR the [skeleweb node app](https://github.com/kieranmaraj/skeleweb) for heroku deployment. The main patches are:",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kieranmaraj/skeletime.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kieranmaraj/skeletime/issues"
+  },
+  "homepage": "https://github.com/kieranmaraj/skeletime#readme"
 }
