@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 0.0, 26.0, 956.0, 502.0 ],
+		"rect" : [ 0.0, 26.0, 1212.0, 662.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,45 @@
 		"showontab" : 2,
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-35",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 600.0, -75.0, 46.0, 22.0 ],
+					"text" : "writeall"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 574.0, -108.0, 22.0, 22.0 ],
+					"text" : "t b"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-10",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 570.0, -150.0, 130.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 14.430171459913254, 210.0, 150.0, 22.0 ],
+					"text" : "Save MUBU Container",
+					"textjustification" : 1
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-79",
 					"maxclass" : "newobj",
@@ -175,6 +214,8 @@
 									"saved_object_attributes" : 									{
 										"autostart" : 0,
 										"defer" : 0,
+										"node_bin_path" : "",
+										"npm_bin_path" : "",
 										"watch" : 0
 									}
 ,
@@ -559,13 +600,13 @@
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-2",
-									"linecount" : 4,
+									"linecount" : 30,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 881.0, 286.0, 50.0, 64.0 ],
-									"text" : "how:tempo how:volume"
+									"text" : "what:noise what:pointilism what:smooth what:sustain when:enter_now when:enter_slowly when:exit_now when:exit_slowly who:group_1 who:group_2 who:rest_of_group who:whole_group"
 								}
 
 							}
@@ -1871,7 +1912,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1200.0, 315.0, 34.0, 22.0 ],
+					"patching_rect" : [ 1200.0, 321.0, 34.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1200.0, 315.0, 34.0, 22.0 ],
 					"text" : "save"
@@ -1993,7 +2034,7 @@
 					"patching_rect" : [ 112.430171459913254, -135.0, 91.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 112.430171459913254, -135.0, 91.0, 22.0 ],
-					"text" : "full_body"
+					"text" : "full"
 				}
 
 			}
@@ -2007,8 +2048,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 14.430171459913254, 210.0, 150.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 14.430171459913254, 210.0, 150.0, 22.0 ],
 					"text" : "Save buffers to files",
 					"textjustification" : 1
 				}
@@ -2037,7 +2076,7 @@
 					"cursor_size" : 3,
 					"cursor_sizeunit" : 0,
 					"cursor_visible" : 1,
-					"domain_bounds" : [ 0.0, 1.0 ],
+					"domain_bounds" : [ 0.0, 2866.418699860572815 ],
 					"domainruler_bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"domainruler_fgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"domainruler_grid" : 0,
@@ -3773,7 +3812,7 @@
 					"patching_rect" : [ 14.930171459913254, 15.0, 840.069828540086746, 54.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 14.930171459913254, 15.0, 840.069828540086746, 54.0 ],
-					"text" : "2.2. full_body buffer management"
+					"text" : "2.2. full buffer management"
 				}
 
 			}
@@ -3985,8 +4024,6 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
-						"node_bin_path" : "",
-						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -4010,6 +4047,20 @@
 			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-11", 0 ],
+					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-35", 0 ],
+					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-15", 0 ],
 					"source" : [ "obj-12", 0 ]
@@ -4352,6 +4403,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-28", 0 ],
 					"source" : [ "obj-34", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-290", 0 ],
+					"source" : [ "obj-35", 0 ]
 				}
 
 			}
@@ -4718,11 +4776,8 @@
 , 			{
 				"name" : "orjan style",
 				"default" : 				{
-					"bgcolor" : [ 0.97911, 0.963068, 0.9712, 1.0 ],
-					"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"elementcolor" : [ 0.898251, 0.915112, 0.965693, 1.0 ],
 					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"color" : [ 0.037449, 0.035848, 0.03644, 1.0 ],
+					"bgcolor" : [ 0.97911, 0.963068, 0.9712, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
 						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -4732,7 +4787,10 @@
 						"proportion" : 0.39,
 						"autogradient" : 0
 					}
-
+,
+					"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"color" : [ 0.037449, 0.035848, 0.03644, 1.0 ],
+					"elementcolor" : [ 0.898251, 0.915112, 0.965693, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
