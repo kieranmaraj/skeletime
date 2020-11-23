@@ -42,40 +42,44 @@ socket.on("classifyData", (c) =>{
 });
 
 socket.on("skeleton", (data) => {
-    // console.log("received skele");
+    console.log("received skele");
     data = JSON.parse(data);
-    // console.log(JSON.stringify(data));
+    console.log(JSON.stringify(data));
 
     //pose landmark rendering
 
-    if(!data.pose_landmarks){
-        return
-    }
+    // if(!data.pose_landmarks){
+    //     return
+    // }
 
-    if(!pose_marks_dumped){
-        return
-    }
+    // if(!pose_marks_dumped){
+    //     return
+    // }
 
     console.log("got past conditions");
 
-    
+    if(data.pose_landmarks && pose_marks_dumped){
+        marks = [];
+        const pose = data.pose_landmarks.poseLandmarks.landmark;
 
-    marks = [];
-    const pose = data.pose_landmarks.poseLandmarks.landmark;
+        for(let i = 0; i < poseConnections.length; i++){
+            let point_a = pose[poseConnections[i][0]];
+            let point_b = pose[poseConnections[i][1]];
 
-    for(let i = 0; i < poseConnections.length; i++){
-        let point_a = pose[poseConnections[i][0]];
-        let point_b = pose[poseConnections[i][1]];
+            marks.push([point_a.x, point_a.y, point_b.x, point_b.y]);
+        }
 
-        marks.push([point_a.x, point_a.y, point_b.x, point_b.y]);
+        // if(data.hand_1_landmarks){
+        //     const hand = data.hand_1_landmarks.handLandmarks
+        // }
+
+        pose_marks_dumped = false;
     }
-
-    pose_marks_dumped = false;
 
 })
 
 async function render(){
-    console.log("render");
+    // console.log("render");
     let outString = "";
 
     for(const mark of marks){
