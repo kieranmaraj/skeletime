@@ -24,12 +24,13 @@ package mediapipe;
 
 import "landmark.proto";
 import "rect.proto";
+import "classification.proto";
 // import "mediapipe/framework/formats/detection.proto";
 
 message SkeletimeBroadcast {
-    optional int32 handIndex = 1;
-    optional NormalizedLandmarkList handLandmarks = 2;
-    optional NormalizedRect handRect = 3;
+    optional ClassificationList handClassification = 1;
+    repeated NormalizedLandmarkList handLandmarks = 2;
+    repeated NormalizedRect handRect = 3;
     optional NormalizedLandmarkList poseLandmarks = 4;
     optional NormalizedRect poseRect = 5;
     // optional int handIndex = 1;
