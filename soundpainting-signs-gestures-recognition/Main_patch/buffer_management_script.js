@@ -526,7 +526,18 @@ async function train() { // this is the async function that triggers the mubu.pl
 			// Set the right buffer index
 			o(["to_mubu_play", "bufferindex", i]);
 			
-			if(model.includes("full_body")) { // TODO: handle this in a better way
+			// if(model.includes("full_body")) { // TODO: handle this in a better way
+			// 	// Then the OSC commands to wekinator
+			// 	o(["model_commands", "/wekinator/control/startDtwRecording", index]);
+			// 	//o(["model_commands", "/wekinator/control/startDtwRecording", index]);
+			// 	p(["model_commands", "/wekinator/control/startDtwRecording", index]);
+			// } else {
+				
+			// 	o(["model_commands", "/wekinator/control/outputs", index+0.00000000001, index+0.00000000001, index+0.00000000001, index+0.00000000001, index+0.00000000001]); // there is a problem with JS having only floats and Max ints and floats... so in order for weki to understand it as a float, we must do this little trick
+			// 	o(["model_commands", "/wekinator/control/startRecording"]);
+			// }
+			
+			if(true) { // TODO: handle this in a better way
 				// Then the OSC commands to wekinator
 				o(["model_commands", "/wekinator/control/startDtwRecording", index]);
 				//o(["model_commands", "/wekinator/control/startDtwRecording", index]);
@@ -536,7 +547,9 @@ async function train() { // this is the async function that triggers the mubu.pl
 				o(["model_commands", "/wekinator/control/outputs", index+0.00000000001, index+0.00000000001, index+0.00000000001, index+0.00000000001, index+0.00000000001]); // there is a problem with JS having only floats and Max ints and floats... so in order for weki to understand it as a float, we must do this little trick
 				o(["model_commands", "/wekinator/control/startRecording"]);
 			}
-			
+
+
+
 		} catch (e) { p(e); }
 		
 		// play
@@ -548,7 +561,14 @@ async function train() { // this is the async function that triggers the mubu.pl
 		
 		await waitforplaytostop(); // we wait for the "end" message to arrive with async code
 		
-		if(model.includes("full_body")) {
+		// if(model.includes("full_body")) {
+		// 	// stop wekinator recording
+		// 	o(["model_commands", "/wekinator/control/stopDtwRecording"]);
+		// } else {
+		// 	o(["model_commands", "/wekinator/control/stopRecording"]);
+		// }
+
+		if(true) {
 			// stop wekinator recording
 			o(["model_commands", "/wekinator/control/stopDtwRecording"]);
 		} else {

@@ -2,7 +2,9 @@ var protobuf = require('protobufjs');
 const dgram = require('dgram');
 const maxApi = require('max-api');
 const io = require("socket.io-client");
+const glMatrix = require("gl-matrix");
 let socket = io(`https://skeleweb.herokuapp.com`);
+
 
 let typeInfo = {
     type : 'local',
@@ -58,12 +60,15 @@ let pose_rect_is_active = false;
 let hand_landmark_is_active = false;
 let hand_rect_is_active = false;
 
+let USE_LOCAL_COORDS = false;
+
 const handlers={};
 handlers.init = init;
 handlers.setPoseRectFilter = setPoseRectFilter;
 handlers.setPoseFilter = setPoseFilter;
 handlers.setHandRectFilter = setHandRectFilter;
 handlers.setHandFilter = setHandFilter;
+handlers.setCoordSystem = setCoordSystem;
 
 maxApi.addHandlers(handlers);
 
@@ -164,6 +169,14 @@ function filter_data(){
     let [poseRectString, poseMarkString, handRectString, handMarkString] = ["", "", "", ""];
     let [poseString, handString, fullBodyString] = ["", "", ""];
 
+    let POSE_RECTANGLE;
+    let poseMarkArray = [];
+    let handMarkArray = [];
+
+    if(DATA.pose_rect){
+        POSE_RECTANGLE = DATA.pose_rect;
+    }
+
     if(pose_rect_is_active && DATA.pose_rect){
         // console.log("pose rect?");
         // console.log(DATA.pose_rect);
@@ -193,6 +206,9 @@ function filter_data(){
             if(pose_landmark_filter[i]){
 
                p_mark = landmarks[i];
+
+               poseMarkArray.push(p_mark.x);
+               poseMarkArray.push(p_mark.y);
 
                poseMarkString += p_mark.x + " ";
                poseMarkString += p_mark.y + " ";
@@ -235,6 +251,9 @@ function filter_data(){
 
             for(let i = 0; i < hand.length; i++){
                 if(hand_landmark_filter[i]){
+                    handMarkArray.push(hand[i].x);
+                    handMarkArray.push(hand[i].y);
+
                     handMarkString += hand[i].x + " ";
                     handMarkString += hand[i].y + " ";
                     handMarkString += hand[i].z + " ";
@@ -243,10 +262,13 @@ function filter_data(){
         }
 
         if(DATA.hand_2_landmarks.landmark){
-            const hand = DATA.hand_1_landmarks.landmark;
+            const hand = DATA.hand_2_landmarks.landmark;
 
             for(let i = 0; i < hand.length; i++){
                 if(hand_landmark_filter[i]){
+                    handMarkArray.push(hand[i].x);
+                    handMarkArray.push(hand[i].y);
+
                     handMarkString += hand[i].x + " ";
                     handMarkString += hand[i].y + " ";
                     handMarkString += hand[i].z + " ";
@@ -255,6 +277,13 @@ function filter_data(){
         }
     }
 
+    if(USE_LOCAL_COORDS){
+        // translate the pose marks so that they are relative to the pose rectangle, not the world space
+        console.log("using local coordinate system...")
+        poseMarkString = worldToLocalPose(poseMarkArray, POSE_RECTANGLE);
+        handMarkString = worldToLocalPose(handMarkArray, POSE_RECTANGLE);
+
+    }
 
     // join the pose rect and pose landmarks
 
@@ -271,6 +300,61 @@ function filter_data(){
     out("/pose", poseString);
     out("/hands", handString);
     out("/fullBody", fullBodyString);
+}
+
+function worldToLocalPose(marks, rect){
+
+    let translatedMarks = "";
+    
+
+    {
+        // const landmarks = DATA.pose_landmarks.landmark;
+
+        // Left shoulder is point  - 12
+        // Right shoulder is point - 11
+
+        // let leftShoulder = landmarks[12];
+        // let rightShoulder = landmarks[11];
+
+        // let LS_Point = glMatrix.vec2.fromValues(leftShoulder.x, leftShoulder.y);
+        // let RS_Point = glMatrix.vec2.fromValues(rightShoulder.x, rightShoulder.y);
+
+        // let shoulder_distance = glMatrix.vec2.distance(LS_Point, RS_Point);
+    }
+
+    // need the new origin point
+    // we have the x and y centres, and the width and height
+    
+    // let poseOrigin = glMatrix.vec2.fromValues(rect.xCenter - rect.width/2, rect.yCenter - rect.height/2);
+
+    let poseOrigin = glMatrix.vec2.fromValues(rect.xCenter, rect.yCenter);
+
+    for(let i = 0; i < marks.length; i+=2){
+        let x = marks[i];
+        let y = marks[i+1];
+
+        let point = glMatrix.vec2.fromValues(x, y);
+        // translate
+
+        glMatrix.vec2.sub(point, point, poseOrigin);
+
+        // rotate
+        glMatrix.vec2.rotate(point, point, poseOrigin, rect.rotation);
+
+        // scale
+        glMatrix.vec2.scale(point, point, ((rect.width/rect.height)/2));
+        // glMatrix.vec2.scale(point, point, shoulder_distance * ((rect.width/rect.height)/2));
+
+        let newMark = `${point[0]} ${point[1]}`;
+        translatedMarks += newMark + " ";
+    }
+
+    return translatedMarks;
+}
+
+function worldToLocalHands(marks, rect){
+
+
 }
 
 
@@ -342,6 +426,14 @@ function setHandFilter(...v){
     console.log("Set Hand Mark Filter...");
     hand_landmark_filter = v;
     hand_landmark_is_active = true;
+}
+
+function setCoordSystem(i){
+    if(i == 0){
+        USE_LOCAL_COORDS = false;
+    }else{
+        USE_LOCAL_COORDS = true;
+    }
 }
 
   

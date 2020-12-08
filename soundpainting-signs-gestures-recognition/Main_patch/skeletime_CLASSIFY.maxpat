@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 4,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -1553.0, 23.0, 1212.0, 688.0 ],
+		"rect" : [ -1535.0, 23.0, 1423.0, 780.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -42,6 +42,132 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-101",
+					"linecount" : 11,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1680.0, 1590.0, 165.0, 156.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 11,
+					"presentation_rect" : [ 1260.0, 1185.0, 165.0, 156.0 ],
+					"text" : "labels who:acoustics who:electronics who:group_1 who:group_2 who:group_3 who:group_4 who:group_5 who:group_6_1 who:group_6_2 who:group_7_1 who:group_7_2 who:rest_of_group_1 who:rest_of_group_2 who:whole_group"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-48",
+					"linecount" : 4,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1140.0, -90.0, 389.0, 62.0 ],
+					"text" : "who:group_1, who:group_2, who:group_3, who:group_4, who:group_5, who:group_6_1, who:group_6_2, who:group_7_1, who:group_7_2, who:whole_group, who:rest_of_group_1, who:rest_of_group_2, who:electronics, who:acoustics"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-182",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 345.0, 2910.0, 50.0, 22.0 ],
+					"text" : "full"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-180",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 150.0, 2895.0, 72.0, 22.0 ],
+					"text" : "r model_tab"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-179",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 795.0, 585.0, 50.0, 22.0 ],
+					"text" : "full"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-175",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1410.0, 2880.0, 90.0, 22.0 ],
+					"text" : "loadmess 6448"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-173",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1410.0, 2921.034856677055359, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-170",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 825.0, 2895.0, 97.0, 22.0 ],
+					"text" : "loadmess 12000"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-169",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 840.0, 2921.034856677055359, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-162",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1215.0, -15.0, 429.0, 35.0 ],
+					"text" : "groups:one, groups:two, groups:three, groups:four, groups:five, groups:six-one groups:six-two, groups:seven-one, groups:seven-two"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-167",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -59,7 +185,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 300.0, 996.0, 66.0, 22.0 ],
+					"patching_rect" : [ 300.0, 945.0, 66.0, 22.0 ],
 					"text" : "r skele_full"
 				}
 
@@ -235,7 +361,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1275.0, 1359.0, 226.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 941.0, 1205.299999952316284, 226.0, 21.0 ],
+					"presentation_rect" : [ 75.0, 1328.299999952316284, 226.0, 21.0 ],
 					"text_width" : 120.0
 				}
 
@@ -254,7 +380,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1275.0, 1305.0, 226.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 941.0, 1171.649999976158142, 226.0, 21.0 ],
+					"presentation_rect" : [ 75.0, 1294.649999976158142, 226.0, 21.0 ],
 					"text_width" : 120.0
 				}
 
@@ -273,7 +399,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1275.0, 1500.0, 226.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 941.0, 1346.299999952316284, 226.0, 21.0 ],
+					"presentation_rect" : [ 75.0, 1469.299999952316284, 226.0, 21.0 ],
 					"text_width" : 120.0
 				}
 
@@ -292,7 +418,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1275.0, 1458.0, 226.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 941.0, 1304.299999952316284, 226.0, 21.0 ],
+					"presentation_rect" : [ 75.0, 1427.299999952316284, 226.0, 21.0 ],
 					"text_width" : 120.0
 				}
 
@@ -311,7 +437,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1275.0, 1428.0, 226.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 941.0, 1274.299999952316284, 226.0, 21.0 ],
+					"presentation_rect" : [ 75.0, 1397.299999952316284, 226.0, 21.0 ],
 					"text_width" : 120.0
 				}
 
@@ -330,7 +456,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1275.0, 1388.0, 226.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 941.0, 1234.299999952316284, 226.0, 21.0 ],
+					"presentation_rect" : [ 75.0, 1357.299999952316284, 226.0, 21.0 ],
 					"text_width" : 120.0
 				}
 
@@ -348,8 +474,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 165.0, 1643.0, 226.0, 21.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 81.0, 1414.649999976158142, 226.0, 21.0 ],
 					"text_width" : 120.0
 				}
 
@@ -367,8 +491,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 165.0, 1613.0, 226.0, 21.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 81.0, 1384.649999976158142, 226.0, 21.0 ],
 					"text_width" : 120.0
 				}
 
@@ -386,8 +508,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 165.0, 1583.0, 226.0, 21.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 81.0, 1354.649999976158142, 226.0, 21.0 ],
 					"text_width" : 120.0
 				}
 
@@ -405,8 +525,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 165.0, 1543.0, 226.0, 21.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 81.0, 1314.649999976158142, 226.0, 21.0 ],
 					"text_width" : 120.0
 				}
 
@@ -424,8 +542,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 165.0, 1447.0, 226.0, 21.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 81.0, 1218.649999976158142, 226.0, 21.0 ],
 					"text_width" : 120.0
 				}
 
@@ -443,8 +559,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 165.0, 1395.0, 226.0, 21.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 81.0, 1166.649999976158142, 226.0, 21.0 ],
 					"text_width" : 120.0
 				}
 
@@ -459,7 +573,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 615.0, 885.0, 93.0, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1002.199999332427979, 1017.0, 93.0, 29.0 ],
+					"presentation_rect" : [ 136.199999332427979, 1140.0, 93.0, 29.0 ],
 					"text" : "HHMM"
 				}
 
@@ -473,8 +587,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 90.0, 915.0, 93.0, 29.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 150.0, 1009.299999952316284, 93.0, 29.0 ],
 					"text" : "GMM"
 				}
 
@@ -513,7 +625,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 705.0, 885.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 941.0, 1017.0, 60.0, 60.0 ]
+					"presentation_rect" : [ 75.0, 1140.0, 60.0, 60.0 ]
 				}
 
 			}
@@ -561,9 +673,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 210.0, 904.0, 24.0, 24.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 75.0, 1009.299999952316284, 60.0, 60.0 ]
+					"patching_rect" : [ 210.0, 904.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -590,7 +700,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 4,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1038,8 +1148,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 2205.0, 1785.0, 1154.339523669332266, 78.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 75.0, 906.0, 1154.339523669332266, 78.0 ],
-					"text" : "3. Mubu Classifiers"
+					"presentation_rect" : [ 30.0, 885.0, 1154.339523669332266, 78.0 ],
+					"text" : "3. Classifiers"
 				}
 
 			}
@@ -1238,7 +1348,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1633.25, 2140.0, 154.5, 59.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 942.5, 1759.649999976158142, 154.5, 59.0 ],
+					"presentation_rect" : [ 1066.5, 1245.0, 154.5, 59.0 ],
 					"setminmax" : [ 0.0, 1.0 ],
 					"setstyle" : 3,
 					"slidercolor" : [ 0.0381, 0.27339, 0.458347, 1.0 ]
@@ -1259,7 +1369,7 @@
 					"patching_rect" : [ 1655.0, 2192.5, 111.0, 52.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 964.25, 1812.149999976158142, 111.0, 52.0 ],
+					"presentation_rect" : [ 1088.25, 1297.5, 111.0, 52.0 ],
 					"text" : "Time Progression (Normalized)"
 				}
 
@@ -1276,7 +1386,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1452.5, 2199.0, 176.0, 39.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 942.5, 1713.649999976158142, 176.0, 39.0 ],
+					"presentation_rect" : [ 1066.5, 1199.0, 176.0, 39.0 ],
 					"text" : "alpha: probability of each state"
 				}
 
@@ -1293,7 +1403,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1344.5, 2199.0, 92.0, 39.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1052.5, 1608.649999976158142, 92.0, 39.0 ],
+					"presentation_rect" : [ 947.5, 1334.0, 92.0, 39.0 ],
 					"text" : "log-likelihood"
 				}
 
@@ -1309,7 +1419,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1344.0, 2140.0, 100.0, 59.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1052.0, 1549.649999976158142, 100.0, 59.0 ],
+					"presentation_rect" : [ 947.0, 1275.0, 100.0, 59.0 ],
 					"setminmax" : [ -150.0, 0.0 ],
 					"setstyle" : 1
 				}
@@ -1327,7 +1437,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1237.0, 2199.0, 93.0, 39.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 945.0, 1608.649999976158142, 93.0, 39.0 ],
+					"presentation_rect" : [ 840.0, 1334.0, 93.0, 39.0 ],
 					"text" : "likelihood"
 				}
 
@@ -1343,7 +1453,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1237.0, 2140.0, 100.0, 59.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 945.0, 1549.649999976158142, 100.0, 59.0 ],
+					"presentation_rect" : [ 840.0, 1275.0, 100.0, 59.0 ],
 					"setminmax" : [ 0.0, 1.0 ],
 					"setstyle" : 1
 				}
@@ -1377,7 +1487,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1451.0, 2140.0, 177.5, 59.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 941.0, 1654.649999976158142, 177.5, 59.0 ],
+					"presentation_rect" : [ 1065.0, 1140.0, 177.5, 59.0 ],
 					"setminmax" : [ 0.0, 1.0 ],
 					"setstyle" : 1,
 					"size" : 10,
@@ -1450,8 +1560,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 158.0, 2189.0, 92.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 188.5, 1671.0, 92.0, 20.0 ],
 					"text" : "log-likelihood"
 				}
 
@@ -1467,8 +1575,6 @@
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 157.5, 2105.0, 100.875, 83.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 188.0, 1587.0, 100.875, 83.0 ],
 					"setminmax" : [ -50.0, 50.0 ],
 					"setstyle" : 1
 				}
@@ -1483,8 +1589,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 50.5, 2189.0, 93.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 81.0, 1671.0, 93.0, 20.0 ],
 					"text" : "likelihood"
 				}
 
@@ -1500,8 +1604,6 @@
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 50.5, 2105.0, 100.875, 83.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 81.0, 1587.0, 100.875, 83.0 ],
 					"setminmax" : [ 0.0, 1.0 ],
 					"setstyle" : 1
 				}
@@ -1518,8 +1620,6 @@
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 264.5, 2105.0, 127.5, 83.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 81.0, 1692.0, 127.5, 83.0 ],
 					"setminmax" : [ 0.0, 1.0 ],
 					"setstyle" : 1,
 					"size" : 3
@@ -1577,9 +1677,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 345.0, 1920.0, 315.0, 80.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 75.0, 1080.299999952316284, 705.0, 80.0 ]
+					"patching_rect" : [ 345.0, 1920.0, 315.0, 80.0 ]
 				}
 
 			}
@@ -1594,7 +1692,8 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1530.0, 1755.0, 435.0, 80.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 941.0, 1080.0, 735.0, 80.0 ]
+					"presentation_rect" : [ 75.0, 1203.0, 735.0, 80.0 ],
+					"text" : "who:acoustics"
 				}
 
 			}
@@ -1647,7 +1746,8 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1256.0, 1908.700000047683716, 195.0, 131.299999952316284 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 945.0, 1414.649999976158142, 150.199999332427979, 131.299999952316284 ]
+					"presentation_rect" : [ 840.0, 1140.0, 150.199999332427979, 131.299999952316284 ],
+					"size" : 14
 				}
 
 			}
@@ -1674,9 +1774,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 75.0, 1868.700000047683716, 185.0, 131.299999952316284 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 81.0, 1446.0, 150.0, 131.299999952316284 ]
+					"patching_rect" : [ 75.0, 1868.700000047683716, 185.0, 131.299999952316284 ]
 				}
 
 			}
@@ -1728,7 +1826,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1230.0, 1125.0, 47.0, 31.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1110.0, 1017.0, 47.0, 31.0 ],
+					"presentation_rect" : [ 244.0, 1140.0, 47.0, 31.0 ],
 					"text" : "train"
 				}
 
@@ -1742,8 +1840,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 105.0, 1335.0, 47.0, 31.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 244.0, 1007.299999952316284, 47.0, 31.0 ],
 					"text" : "train"
 				}
 
@@ -1769,7 +1865,7 @@
 					"outlettype" : [ "", "", "", "", "" ],
 					"patching_rect" : [ 1185.0, 1560.0, 465.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1005.0, 1051.799999952316284, 147.0, 22.0 ],
+					"presentation_rect" : [ 139.0, 1174.799999952316284, 147.0, 22.0 ],
 					"text" : "mubu.hhmm full skele_full"
 				}
 
@@ -1782,8 +1878,6 @@
 					"numoutlets" : 5,
 					"outlettype" : [ "", "", "", "", "" ],
 					"patching_rect" : [ 75.0, 1695.0, 300.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 150.0, 1047.299999952316284, 141.0, 22.0 ],
 					"text" : "mubu.gmm full skele_full"
 				}
 
@@ -1795,7 +1889,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 878.210557579994202, 567.0, 72.0, 22.0 ],
+					"patching_rect" : [ 878.210557579994202, 555.0, 72.0, 22.0 ],
 					"text" : "r model_tab"
 				}
 
@@ -2049,7 +2143,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 276.933289881795645, 2891.034856677055359, 88.0, 22.0 ],
+					"patching_rect" : [ 255.0, 2865.0, 88.0, 22.0 ],
 					"text" : "loadpercent 50"
 				}
 
@@ -2188,7 +2282,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 4,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2304,7 +2398,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full_body_DTW"
@@ -2326,7 +2421,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands_adaboost"
@@ -2348,7 +2444,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full_body_DTW"
@@ -2370,7 +2467,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands_adaboost"
@@ -2392,7 +2490,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full_body_DTW"
@@ -2414,7 +2513,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands_adaboost"
@@ -2436,7 +2536,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full_body"
@@ -2458,7 +2559,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands"
@@ -2480,7 +2582,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full_body"
@@ -2502,7 +2605,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands"
@@ -2524,7 +2628,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full_body"
@@ -2546,7 +2651,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands"
@@ -2568,7 +2674,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full_body"
@@ -2590,7 +2697,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands"
@@ -2612,7 +2720,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full_body"
@@ -2634,7 +2743,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands"
@@ -2656,7 +2766,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full_body"
@@ -2678,7 +2789,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands"
@@ -2700,7 +2812,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full_body"
@@ -2722,7 +2835,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands"
@@ -2744,7 +2858,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full_body"
@@ -2766,7 +2881,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands"
@@ -2788,7 +2904,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full_body"
@@ -2810,7 +2927,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands"
@@ -2832,7 +2950,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full_body"
@@ -2854,7 +2973,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands"
@@ -2876,7 +2996,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full_body"
@@ -2898,7 +3019,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands"
@@ -2920,7 +3042,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full_body"
@@ -2942,7 +3065,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands"
@@ -2964,7 +3088,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full_body"
@@ -2986,7 +3111,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands"
@@ -3008,7 +3134,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full_body"
@@ -3030,7 +3157,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands"
@@ -3052,7 +3180,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full_body"
@@ -3074,7 +3203,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands"
@@ -3096,7 +3226,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full_body"
@@ -3118,7 +3249,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands"
@@ -3140,7 +3272,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full_body"
@@ -3162,7 +3295,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands"
@@ -3184,7 +3318,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full_body"
@@ -3206,7 +3341,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands"
@@ -3228,7 +3364,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full_body"
@@ -3250,7 +3387,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands"
@@ -3272,7 +3410,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full_body"
@@ -3294,7 +3433,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands"
@@ -3316,7 +3456,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full_body"
@@ -3338,7 +3479,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands"
@@ -3360,7 +3502,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full_body"
@@ -3382,7 +3525,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands"
@@ -3404,7 +3548,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full_body"
@@ -3426,7 +3571,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands"
@@ -3448,7 +3594,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full_body"
@@ -3470,7 +3617,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands"
@@ -3492,7 +3640,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full_body"
@@ -3514,7 +3663,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands"
@@ -3536,7 +3686,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full_body"
@@ -3558,7 +3709,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands"
@@ -3580,7 +3732,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full_body"
@@ -3602,7 +3755,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands"
@@ -3624,7 +3778,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full_body"
@@ -3646,7 +3801,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands"
@@ -3668,7 +3824,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full_body"
@@ -3690,7 +3847,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands"
@@ -3712,7 +3870,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full_body"
@@ -3734,7 +3893,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands"
@@ -3756,7 +3916,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full_body"
@@ -3778,7 +3939,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands"
@@ -3800,7 +3962,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full_body"
@@ -3822,7 +3985,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands"
@@ -3844,7 +4008,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full_body"
@@ -3866,7 +4031,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands"
@@ -3888,7 +4054,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full_body"
@@ -3910,7 +4077,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands"
@@ -3932,7 +4100,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full_body"
@@ -3954,7 +4123,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands"
@@ -3976,7 +4146,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full_body"
@@ -3998,7 +4169,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands"
@@ -4020,7 +4192,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full_body"
@@ -4042,7 +4215,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands"
@@ -4064,7 +4238,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full_body"
@@ -4086,7 +4261,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands"
@@ -4108,7 +4284,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full_body"
@@ -4130,7 +4307,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands"
@@ -4152,7 +4330,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full_body"
@@ -4174,7 +4353,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands"
@@ -4196,7 +4376,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full_body"
@@ -4218,7 +4399,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands"
@@ -4240,7 +4422,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full_body"
@@ -4262,7 +4445,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands"
@@ -4284,7 +4468,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full_body"
@@ -4306,7 +4491,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands"
@@ -4328,7 +4514,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full_body"
@@ -4350,7 +4537,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands"
@@ -4372,7 +4560,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full_body"
@@ -4394,7 +4583,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands"
@@ -4416,7 +4606,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full_body"
@@ -4438,7 +4629,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands"
@@ -4460,7 +4652,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full_body"
@@ -4482,7 +4675,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands"
@@ -4504,7 +4698,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full_body"
@@ -4526,7 +4721,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands"
@@ -4548,7 +4744,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full_body"
@@ -4570,7 +4767,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands"
@@ -4592,7 +4790,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full_body"
@@ -4614,7 +4813,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands"
@@ -4636,7 +4836,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full_body"
@@ -4658,7 +4859,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full_body_off"
@@ -4680,7 +4882,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands"
@@ -4702,7 +4905,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full_body"
@@ -4724,7 +4928,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full_body_off"
@@ -4746,7 +4951,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands"
@@ -4768,7 +4974,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full_body"
@@ -4790,7 +4997,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full_body_off"
@@ -4812,7 +5020,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands"
@@ -4834,7 +5043,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full_body"
@@ -4856,7 +5066,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full_body_off"
@@ -4878,7 +5089,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands"
@@ -4900,7 +5112,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full"
@@ -4922,7 +5135,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands"
@@ -4944,7 +5158,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name pose"
@@ -4966,7 +5181,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full"
@@ -4988,7 +5204,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands"
@@ -5010,7 +5227,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name pose"
@@ -5032,7 +5250,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full"
@@ -5054,7 +5273,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands"
@@ -5076,7 +5296,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name pose"
@@ -5098,7 +5319,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full"
@@ -5120,7 +5342,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands"
@@ -5142,7 +5365,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name pose"
@@ -5164,7 +5388,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full"
@@ -5186,7 +5411,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands"
@@ -5208,7 +5434,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name pose"
@@ -5230,7 +5457,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full"
@@ -5252,7 +5480,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands"
@@ -5274,7 +5503,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name pose"
@@ -5296,7 +5526,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full"
@@ -5318,7 +5549,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands"
@@ -5340,7 +5572,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name pose"
@@ -5362,7 +5595,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full"
@@ -5384,7 +5618,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands"
@@ -5406,7 +5641,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name pose"
@@ -5428,7 +5664,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full"
@@ -5450,7 +5687,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands"
@@ -5472,7 +5710,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name pose"
@@ -5494,7 +5733,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name full"
@@ -5516,7 +5756,8 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name hands"
@@ -5538,7 +5779,284 @@
 										"parameter_mappable" : 0,
 										"resamplefiles" : 0,
 										"savegui" : 0,
-										"snaprate" : 1000.0
+										"snaprate" : 1000.0,
+										"verbose" : 1
+									}
+,
+									"text" : "mubu @embed 0 @name pose"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-154",
+									"linecount" : 2,
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"saved_object_attributes" : 									{
+										"embed" : 0,
+										"externalfiles" : 1,
+										"parameter_enable" : 0,
+										"parameter_mappable" : 0,
+										"resamplefiles" : 0,
+										"savegui" : 0,
+										"snaprate" : 1000.0,
+										"verbose" : 1
+									}
+,
+									"text" : "mubu @embed 0 @name full"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-155",
+									"linecount" : 2,
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"saved_object_attributes" : 									{
+										"embed" : 0,
+										"externalfiles" : 1,
+										"parameter_enable" : 0,
+										"parameter_mappable" : 0,
+										"resamplefiles" : 0,
+										"savegui" : 0,
+										"snaprate" : 1000.0,
+										"verbose" : 1
+									}
+,
+									"text" : "mubu @embed 0 @name hands"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-156",
+									"linecount" : 2,
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"saved_object_attributes" : 									{
+										"embed" : 0,
+										"externalfiles" : 1,
+										"parameter_enable" : 0,
+										"parameter_mappable" : 0,
+										"resamplefiles" : 0,
+										"savegui" : 0,
+										"snaprate" : 1000.0,
+										"verbose" : 1
+									}
+,
+									"text" : "mubu @embed 0 @name pose"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-157",
+									"linecount" : 2,
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"saved_object_attributes" : 									{
+										"embed" : 0,
+										"externalfiles" : 1,
+										"parameter_enable" : 0,
+										"parameter_mappable" : 0,
+										"resamplefiles" : 0,
+										"savegui" : 0,
+										"snaprate" : 1000.0,
+										"verbose" : 1
+									}
+,
+									"text" : "mubu @embed 0 @name full"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-158",
+									"linecount" : 2,
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"saved_object_attributes" : 									{
+										"embed" : 0,
+										"externalfiles" : 1,
+										"parameter_enable" : 0,
+										"parameter_mappable" : 0,
+										"resamplefiles" : 0,
+										"savegui" : 0,
+										"snaprate" : 1000.0,
+										"verbose" : 1
+									}
+,
+									"text" : "mubu @embed 0 @name hands"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-159",
+									"linecount" : 2,
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"saved_object_attributes" : 									{
+										"embed" : 0,
+										"externalfiles" : 1,
+										"parameter_enable" : 0,
+										"parameter_mappable" : 0,
+										"resamplefiles" : 0,
+										"savegui" : 0,
+										"snaprate" : 1000.0,
+										"verbose" : 1
+									}
+,
+									"text" : "mubu @embed 0 @name pose"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-160",
+									"linecount" : 2,
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"saved_object_attributes" : 									{
+										"embed" : 0,
+										"externalfiles" : 1,
+										"parameter_enable" : 0,
+										"parameter_mappable" : 0,
+										"resamplefiles" : 0,
+										"savegui" : 0,
+										"snaprate" : 1000.0,
+										"verbose" : 1
+									}
+,
+									"text" : "mubu @embed 0 @name full"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-161",
+									"linecount" : 2,
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"saved_object_attributes" : 									{
+										"embed" : 0,
+										"externalfiles" : 1,
+										"parameter_enable" : 0,
+										"parameter_mappable" : 0,
+										"resamplefiles" : 0,
+										"savegui" : 0,
+										"snaprate" : 1000.0,
+										"verbose" : 1
+									}
+,
+									"text" : "mubu @embed 0 @name hands"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-162",
+									"linecount" : 2,
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"saved_object_attributes" : 									{
+										"embed" : 0,
+										"externalfiles" : 1,
+										"parameter_enable" : 0,
+										"parameter_mappable" : 0,
+										"resamplefiles" : 0,
+										"savegui" : 0,
+										"snaprate" : 1000.0,
+										"verbose" : 1
+									}
+,
+									"text" : "mubu @embed 0 @name pose"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-163",
+									"linecount" : 2,
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"saved_object_attributes" : 									{
+										"embed" : 0,
+										"externalfiles" : 1,
+										"parameter_enable" : 0,
+										"parameter_mappable" : 0,
+										"resamplefiles" : 0,
+										"savegui" : 0,
+										"snaprate" : 1000.0,
+										"verbose" : 1
+									}
+,
+									"text" : "mubu @embed 0 @name full"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-164",
+									"linecount" : 2,
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"saved_object_attributes" : 									{
+										"embed" : 0,
+										"externalfiles" : 1,
+										"parameter_enable" : 0,
+										"parameter_mappable" : 0,
+										"resamplefiles" : 0,
+										"savegui" : 0,
+										"snaprate" : 1000.0,
+										"verbose" : 1
+									}
+,
+									"text" : "mubu @embed 0 @name hands"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-165",
+									"linecount" : 2,
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"saved_object_attributes" : 									{
+										"embed" : 0,
+										"externalfiles" : 1,
+										"parameter_enable" : 0,
+										"parameter_mappable" : 0,
+										"resamplefiles" : 0,
+										"savegui" : 0,
+										"snaprate" : 1000.0,
+										"verbose" : 1
 									}
 ,
 									"text" : "mubu @embed 0 @name pose"
@@ -5726,42 +6244,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-50",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 844.933289881795645, 2921.034856677055359, 42.0, 22.0 ],
-					"text" : "12000"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-48",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1412.933289881795645, 2921.034856677055359, 35.0, 22.0 ],
-					"text" : "6448"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-33",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 276.933289881795645, 2921.034856677055359, 57.0, 22.0 ],
-					"text" : "full_body"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -5776,6 +6258,8 @@
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 276.933289881795645, 2951.034856677055359, 1155.0, 165.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 30.0, 965.0, 1155.0, 165.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -5810,8 +6294,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 15.0, 90.0, 213.0, 22.0 ],
-					"text" : "set skele_pose skele_hands skele_full"
+					"patching_rect" : [ 15.0, 90.0, 280.0, 22.0 ],
+					"text" : "set skele_pose skele_hands skele_full skele_angle"
 				}
 
 			}
@@ -6339,7 +6823,7 @@
 					"patching_rect" : [ 1510.0, 1500.0, 508.0, 31.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 1176.0, 1346.299999952316284, 508.0, 31.0 ],
+					"presentation_rect" : [ 310.0, 1469.299999952316284, 508.0, 31.0 ],
 					"text" : "Maximum number of steps of the EM training algorithm. If this value is > to EM_minsteps, this criterion is used to stop the EM algorithm. Otherwise EM_percentchg is used."
 				}
 
@@ -6355,8 +6839,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 399.0, 1447.0, 399.0, 19.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 315.0, 1218.649999976158142, 399.0, 19.0 ],
 					"text" : "regularization <relative> <absolute>"
 				}
 
@@ -6372,9 +6854,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 399.0, 1634.0, 504.0, 31.0 ],
-					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 315.0, 1405.649999976158142, 504.0, 31.0 ],
 					"text" : "Maximum number of steps of the EM training algorithm. If this value is > to EM_minsteps, this criterion is used to stop the EM algorithm. Otherwise EM_percentchg is used."
 				}
 
@@ -6390,9 +6869,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 399.0, 1594.0, 509.0, 31.0 ],
-					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 315.0, 1365.649999976158142, 509.0, 31.0 ],
 					"text" : "Minimum percentage of change in the likelihood of the training data given model parameters to stop the EM algorithm."
 				}
 
@@ -6407,8 +6883,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 399.0, 1567.0, 504.0, 19.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 315.0, 1338.649999976158142, 504.0, 19.0 ],
 					"text" : "Minimum number of steps of the EM training algorithm."
 				}
 
@@ -6424,9 +6898,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 399.0, 1538.0, 507.0, 31.0 ],
-					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 315.0, 1309.649999976158142, 507.0, 31.0 ],
 					"text" : "Size (in samples) of the smoothing window for estimated likelihood. A small window favors reactivity. A large window ensure better stability of the results"
 				}
 
@@ -6442,9 +6913,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 399.0, 1466.0, 507.0, 68.0 ],
-					"presentation" : 1,
-					"presentation_linecount" : 5,
-					"presentation_rect" : [ 315.0, 1237.649999976158142, 507.0, 68.0 ],
 					"text" : "Regularization allows to artificially increase the generalization of the model. It is an offset Added to the diagonal of covariance matrices for convergence. A large offset improves the generalization of the model, but can reduce the accuracy of the recognition. The relative value is proportional to the variance of the training data. The Absolute value is the minimum offset. (replaces attribute \"varianceoffset\")"
 				}
 
@@ -6460,7 +6928,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1509.0, 1359.0, 507.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1175.0, 1205.299999952316284, 507.0, 19.0 ],
+					"presentation_rect" : [ 309.0, 1328.299999952316284, 507.0, 19.0 ],
 					"text" : "Transition mode of each model (left-right by default to guarantee temporal consistency)"
 				}
 
@@ -6478,7 +6946,7 @@
 					"patching_rect" : [ 1509.0, 1305.0, 507.0, 31.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 1175.0, 1171.649999976158142, 507.0, 31.0 ],
+					"presentation_rect" : [ 309.0, 1294.649999976158142, 507.0, 31.0 ],
 					"text" : "Number of hidden states in each HMM. Increasing the number of states can improve the temporal alignment and following but can result in lower recognition accuracy and generality"
 				}
 
@@ -6496,7 +6964,7 @@
 					"patching_rect" : [ 1509.0, 1458.0, 509.0, 31.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 1175.0, 1304.299999952316284, 509.0, 31.0 ],
+					"presentation_rect" : [ 309.0, 1427.299999952316284, 509.0, 31.0 ],
 					"text" : "Minimum percentage of change in the likelihood of the training data given model parameters to stop the EM algorithm."
 				}
 
@@ -6512,7 +6980,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1509.0, 1428.0, 507.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1175.0, 1274.299999952316284, 507.0, 19.0 ],
+					"presentation_rect" : [ 309.0, 1397.299999952316284, 507.0, 19.0 ],
 					"text" : "Minimum number of steps of the EM training algorithm."
 				}
 
@@ -6530,7 +6998,7 @@
 					"patching_rect" : [ 1509.0, 1388.0, 507.0, 31.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 1175.0, 1234.299999952316284, 507.0, 31.0 ],
+					"presentation_rect" : [ 309.0, 1357.299999952316284, 507.0, 31.0 ],
 					"text" : "Size (in samples) of the smoothing window for estimated likelihood. A small window favors reactivity. A large window ensure better stability of the results"
 				}
 
@@ -6546,10 +7014,21 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 399.0, 1395.0, 507.0, 31.0 ],
-					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 315.0, 1166.649999976158142, 507.0, 31.0 ],
 					"text" : "Number of Gaussian components in the mixture model. Using more gaussians allows to fit the training data more precisely, but can loose generality to new data (overfitting). (replaces attribute \"mixtures\")"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"attr" : "play",
+					"id" : "obj-33",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1185.0, 1530.0, 150.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 309.0, 1170.0, 150.0, 22.0 ]
 				}
 
 			}
@@ -6558,6 +7037,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
 					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-101", 1 ],
+					"source" : [ "obj-10", 4 ]
 				}
 
 			}
@@ -6899,14 +7385,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-144", 0 ],
-					"order" : 2,
-					"source" : [ "obj-146", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-33", 0 ],
 					"order" : 3,
 					"source" : [ "obj-146", 0 ]
 				}
@@ -6914,7 +7392,15 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-48", 0 ],
+					"destination" : [ "obj-169", 0 ],
+					"order" : 1,
+					"source" : [ "obj-146", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-173", 0 ],
 					"order" : 0,
 					"source" : [ "obj-146", 0 ]
 				}
@@ -6922,8 +7408,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-50", 0 ],
-					"order" : 1,
+					"destination" : [ "obj-182", 0 ],
+					"order" : 2,
 					"source" : [ "obj-146", 0 ]
 				}
 
@@ -7057,6 +7543,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-27", 0 ],
+					"disabled" : 1,
 					"source" : [ "obj-166", 0 ]
 				}
 
@@ -7065,6 +7552,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-121", 1 ],
 					"source" : [ "obj-167", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-53", 1 ],
+					"source" : [ "obj-169", 0 ]
 				}
 
 			}
@@ -7086,8 +7580,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-169", 0 ],
+					"source" : [ "obj-170", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-174", 0 ],
 					"source" : [ "obj-171", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-53", 2 ],
+					"source" : [ "obj-173", 0 ]
 				}
 
 			}
@@ -7100,8 +7608,38 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-173", 0 ],
+					"source" : [ "obj-175", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-25", 0 ],
 					"source" : [ "obj-18", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-182", 1 ],
+					"order" : 0,
+					"source" : [ "obj-180", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-53", 0 ],
+					"order" : 1,
+					"source" : [ "obj-180", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-53", 0 ],
+					"source" : [ "obj-182", 0 ]
 				}
 
 			}
@@ -7386,7 +7924,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-53", 0 ],
+					"destination" : [ "obj-10", 0 ],
 					"source" : [ "obj-33", 0 ]
 				}
 
@@ -7500,20 +8038,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-55", 0 ],
 					"source" : [ "obj-47", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-53", 2 ],
-					"source" : [ "obj-48", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-53", 1 ],
-					"source" : [ "obj-50", 0 ]
 				}
 
 			}
@@ -7638,7 +8162,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-179", 1 ],
+					"order" : 0,
+					"source" : [ "obj-9", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-81", 0 ],
+					"order" : 1,
 					"source" : [ "obj-9", 0 ]
 				}
 
@@ -7687,6 +8220,15 @@
 
 			}
  ],
+		"parameters" : 		{
+			"obj-139::obj-24::obj-38" : [ "live.gain~", "Countdown", 0 ],
+			"parameterbanks" : 			{
+
+			}
+,
+			"inherited_shortname" : 1
+		}
+,
 		"dependency_cache" : [ 			{
 				"name" : "loadpercent.maxpat",
 				"bootpath" : "~/Desktop/YORK2020/IM-EAO/skeletime/soundpainting-signs-gestures-recognition/Main_patch",
@@ -7837,6 +8379,10 @@
 				"type" : "iLaX"
 			}
 , 			{
+				"name" : "mubu.mxo",
+				"type" : "iLaX"
+			}
+, 			{
 				"name" : "mubu.knn.mxo",
 				"type" : "iLaX"
 			}
@@ -7864,8 +8410,10 @@
 		"styles" : [ 			{
 				"name" : "orjan style",
 				"default" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"elementcolor" : [ 0.898251, 0.915112, 0.965693, 1.0 ],
 					"bgcolor" : [ 0.97911, 0.963068, 0.9712, 1.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
 						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -7876,9 +8424,7 @@
 						"autogradient" : 0
 					}
 ,
-					"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"color" : [ 0.037449, 0.035848, 0.03644, 1.0 ],
-					"elementcolor" : [ 0.898251, 0.915112, 0.965693, 1.0 ]
+					"color" : [ 0.037449, 0.035848, 0.03644, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
