@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 4,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -1397.0, 23.0, 1168.0, 688.0 ],
+		"rect" : [ 34.0, 78.0, 800.0, 688.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -41,27 +41,106 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-23",
+					"id" : "obj-44",
 					"maxclass" : "button",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 750.0, -120.0, 24.0, 24.0 ],
+					"patching_rect" : [ 1005.0, -179.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 15.0, 68.0, 24.0, 24.0 ]
+					"presentation_rect" : [ 135.0, 53.0, 24.0, 24.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-33",
-					"maxclass" : "newobj",
+					"id" : "obj-41",
+					"maxclass" : "button",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 797.0, -150.0, 58.0, 22.0 ],
-					"text" : "loadbang"
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1006.0, -105.0, 24.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 198.0, 53.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-39",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 705.0, -195.0, 24.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 75.0, 53.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-37",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 600.0, -255.0, 24.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 15.0, 53.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-35",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 990.0, -142.0, 241.0, 22.0 ],
+					"text" : "when:enter_immediately when:enter_slowly"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-31",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1006.0, -75.0, 89.0, 22.0 ],
+					"text" : "palette:tear_up"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-29",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 705.0, -163.0, 266.0, 35.0 ],
+					"text" : "palette:one palette:two palette:three palette:four palette:five"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-23",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 600.0, -229.0, 286.0, 22.0 ],
+					"text" : "palette:indicator who:group_indicator shapeline:start"
 				}
 
 			}
@@ -72,7 +151,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "bang", "", "clear" ],
-					"patching_rect" : [ 877.0, -28.0, 57.0, 22.0 ],
+					"patching_rect" : [ 884.0, -15.0, 57.0, 22.0 ],
 					"text" : "t b l clear"
 				}
 
@@ -97,7 +176,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 885.0, -106.0, 309.0, 89.0 ],
+					"patching_rect" : [ 840.0, -270.0, 309.0, 89.0 ],
 					"text" : "other:silence other:continue who:whole_group who:rest_of_group who:group_1 who:group_2 what:long_tone what:pointilism what:smooth what:rough when:enter_now when:enter_slowly when:exit_now when:exit_slowly palette:palett_1 palette:palette_2 continuous:density continuous:pitch"
 				}
 
@@ -127,7 +206,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 4,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -161,7 +240,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-69",
@@ -405,12 +483,12 @@
 									"patching_rect" : [ 309.0, 644.0, 48.0, 136.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
-											"parameter_type" : 0,
-											"parameter_unitstyle" : 4,
-											"parameter_mmin" : -70.0,
 											"parameter_longname" : "live.gain~",
 											"parameter_mmax" : 6.0,
-											"parameter_shortname" : "Countdown"
+											"parameter_mmin" : -70.0,
+											"parameter_shortname" : "Countdown",
+											"parameter_type" : 0,
+											"parameter_unitstyle" : 4
 										}
 
 									}
@@ -483,7 +561,7 @@
 									"bgcolor2" : [ 0.301961, 0.301961, 0.301961, 1.0 ],
 									"bgfillcolor_angle" : 270.0,
 									"bgfillcolor_autogradient" : 0.0,
-									"bgfillcolor_color" : [ 1, 0.1, 0 ],
+									"bgfillcolor_color" : [ 0.8, 0.8, 0.8 ],
 									"bgfillcolor_color1" : [ 0.301961, 0.301961, 0.301961, 1.0 ],
 									"bgfillcolor_color2" : [ 0.2, 0.2, 0.2, 1.0 ],
 									"bgfillcolor_proportion" : 0.5,
@@ -498,7 +576,6 @@
 									"patching_rect" : [ 1513.0, 592.0, 154.0, 62.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 980.0, 119.0, 154.0, 62.0 ],
-									"text" : "(-1)",
 									"textcolor" : [ 0.141176470588235, 0.125490196078431, 0.125490196078431, 1.0 ]
 								}
 
@@ -521,7 +598,7 @@
 									"bgcolor2" : [ 0.301961, 0.301961, 0.301961, 1.0 ],
 									"bgfillcolor_angle" : 270.0,
 									"bgfillcolor_autogradient" : 0.0,
-									"bgfillcolor_color" : [ 1, 0.1, 0 ],
+									"bgfillcolor_color" : [ 0.8, 0.8, 0.8 ],
 									"bgfillcolor_color1" : [ 0.301961, 0.301961, 0.301961, 1.0 ],
 									"bgfillcolor_color2" : [ 0.2, 0.2, 0.2, 1.0 ],
 									"bgfillcolor_proportion" : 0.5,
@@ -536,7 +613,6 @@
 									"patching_rect" : [ 1206.0, 607.0, 134.0, 62.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 830.0, 118.0, 66.0, 62.0 ],
-									"text" : "1",
 									"textcolor" : [ 0.141176470588235, 0.125490196078431, 0.125490196078431, 1.0 ]
 								}
 
@@ -559,7 +635,7 @@
 									"bgcolor2" : [ 0.301961, 0.301961, 0.301961, 1.0 ],
 									"bgfillcolor_angle" : 270.0,
 									"bgfillcolor_autogradient" : 0.0,
-									"bgfillcolor_color" : [ 1, 0.1, 0 ],
+									"bgfillcolor_color" : [ 0.8, 0.8, 0.8 ],
 									"bgfillcolor_color1" : [ 0.301961, 0.301961, 0.301961, 1.0 ],
 									"bgfillcolor_color2" : [ 0.2, 0.2, 0.2, 1.0 ],
 									"bgfillcolor_proportion" : 0.5,
@@ -574,7 +650,6 @@
 									"patching_rect" : [ 718.5, 607.0, 435.0, 62.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 253.0, 119.0, 545.0, 62.0 ],
-									"text" : "palette:palette_2",
 									"textcolor" : [ 0.141176470588235, 0.125490196078431, 0.125490196078431, 1.0 ]
 								}
 
@@ -609,7 +684,7 @@
 									"bgcolor2" : [ 0.301961, 0.301961, 0.301961, 1.0 ],
 									"bgfillcolor_angle" : 270.0,
 									"bgfillcolor_autogradient" : 0.0,
-									"bgfillcolor_color" : [ 1, 0.1, 0 ],
+									"bgfillcolor_color" : [ 0.8, 0.8, 0.8 ],
 									"bgfillcolor_color1" : [ 0.301961, 0.301961, 0.301961, 1.0 ],
 									"bgfillcolor_color2" : [ 0.2, 0.2, 0.2, 1.0 ],
 									"bgfillcolor_proportion" : 0.5,
@@ -624,7 +699,7 @@
 									"patching_rect" : [ 534.0, 398.0, 237.0, 62.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 20.573784343898296, 119.0, 199.0, 62.0 ],
-									"text" : "training",
+									"text" : "no",
 									"textcolor" : [ 0.141176470588235, 0.125490196078431, 0.125490196078431, 1.0 ]
 								}
 
@@ -776,7 +851,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 12.573784343898296, 90.0, 1637.426215656101704, 80.0 ],
-									"text" : "training sign palette:palette_2 1 (-1)"
+									"text" : "no sign has been defined"
 								}
 
 							}
@@ -1268,8 +1343,7 @@
 						"styles" : [ 							{
 								"name" : "orjan style",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.97911, 0.963068, 0.9712, 1.0 ],
+									"color" : [ 0.037449, 0.035848, 0.03644, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
 										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -1280,9 +1354,10 @@
 										"autogradient" : 0
 									}
 ,
+									"elementcolor" : [ 0.898251, 0.915112, 0.965693, 1.0 ],
 									"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-									"color" : [ 0.037449, 0.035848, 0.03644, 1.0 ],
-									"elementcolor" : [ 0.898251, 0.915112, 0.965693, 1.0 ]
+									"bgcolor" : [ 0.97911, 0.963068, 0.9712, 1.0 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1329,7 +1404,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 525.0, 285.0, 330.0, 30.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 525.0, 285.0, 330.0, 30.0 ],
+					"presentation_rect" : [ 525.0, 270.0, 330.0, 30.0 ],
 					"text" : "Open recording state big panel",
 					"texton" : "Opening"
 				}
@@ -1375,7 +1450,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 270.0, 90.0, 240.0, 30.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 270.0, 90.0, 240.0, 30.0 ],
+					"presentation_rect" : [ 270.0, 75.0, 240.0, 30.0 ],
 					"rounded" : 5.0,
 					"style" : "Audiomix",
 					"text" : "Clear sign list",
@@ -1398,7 +1473,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 525.0, 90.0, 330.0, 30.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 525.0, 90.0, 330.0, 30.0 ],
+					"presentation_rect" : [ 525.0, 75.0, 330.0, 30.0 ],
 					"rounded" : 5.0,
 					"style" : "Audiomix",
 					"text" : "LAUNCH RECORDING",
@@ -1433,7 +1508,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 4,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2003,7 +2078,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 15.0, 90.0, 240.0, 39.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 15.0, 90.0, 240.0, 39.0 ],
+					"presentation_rect" : [ 15.0, 75.0, 240.0, 39.0 ],
 					"text" : "1) Name new signs",
 					"textjustification" : 1
 				}
@@ -2112,7 +2187,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-47",
-					"linecount" : 8,
+					"linecount" : 2,
 					"maxclass" : "textedit",
 					"numinlets" : 1,
 					"numoutlets" : 4,
@@ -2120,9 +2195,9 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 15.0, 135.0, 240.0, 135.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 8,
-					"presentation_rect" : [ 15.0, 135.0, 240.0, 135.0 ],
-					"text" : "other:silence other:continue who:whole_group who:rest_of_group who:group_1 who:group_2 what:long_tone what:pointilism what:smooth what:rough when:enter_now when:enter_slowly when:exit_now when:exit_slowly palette:palett_1 palette:palette_2 continuous:density continuous:pitch"
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 15.0, 120.0, 240.0, 135.0 ],
+					"text" : "palette:indicator who:group_indicator shapeline:start"
 				}
 
 			}
@@ -2138,7 +2213,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 4,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2415,7 +2490,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 270.0, 135.0, 240.0, 135.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 270.0, 135.0, 240.0, 135.0 ]
+					"presentation_rect" : [ 270.0, 120.0, 240.0, 135.0 ]
 				}
 
 			}
@@ -2579,15 +2654,15 @@
 					"bgcolor" : [ 1.0, 1.0, 1.0, 0.56078431372549 ],
 					"fontface" : 1,
 					"fontname" : "Bebas Neue",
-					"fontsize" : 48.0,
+					"fontsize" : 18.0,
 					"id" : "obj-42",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 15.0, 12.0, 840.0, 54.0 ],
+					"patching_rect" : [ 15.0, 12.0, 322.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 15.0, 12.0, 840.0, 54.0 ],
-					"text" : "2.1. Add and record signs for full"
+					"presentation_rect" : [ 15.0, 15.0, 825.0, 24.0 ],
+					"text" : "2.1. Add and record signs for entry"
 				}
 
 			}
@@ -2636,7 +2711,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 4,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -4244,7 +4319,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 525.0, 135.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 525.0, 135.0, 50.0, 22.0 ]
+					"presentation_rect" : [ 525.0, 120.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -4258,8 +4333,8 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 15.0, 285.0, 495.0, 35.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 15.0, 285.0, 495.0, 35.0 ],
-					"text" : "\"training sign palette:palette_2 1 (-1)\""
+					"presentation_rect" : [ 15.0, 270.0, 495.0, 35.0 ],
+					"text" : "no sign has been defined"
 				}
 
 			}
@@ -4272,7 +4347,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 585.0, 135.0, 270.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 585.0, 135.0, 270.0, 24.0 ],
+					"presentation_rect" : [ 585.0, 120.0, 270.0, 24.0 ],
 					"text" : "Index of the starting sign"
 				}
 
@@ -4286,7 +4361,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 585.0, 225.0, 270.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 585.0, 225.0, 270.0, 24.0 ],
+					"presentation_rect" : [ 585.0, 210.0, 270.0, 24.0 ],
 					"text" : "Set initial preparation time (s)"
 				}
 
@@ -4315,7 +4390,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 525.0, 225.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 525.0, 225.0, 50.0, 22.0 ]
+					"presentation_rect" : [ 525.0, 210.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -4328,7 +4403,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 585.0, 255.0, 270.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 585.0, 255.0, 270.0, 24.0 ],
+					"presentation_rect" : [ 585.0, 240.0, 270.0, 24.0 ],
 					"text" : "Set the number of repetitions per sign"
 				}
 
@@ -4357,7 +4432,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 525.0, 255.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 525.0, 255.0, 50.0, 22.0 ]
+					"presentation_rect" : [ 525.0, 240.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -4370,7 +4445,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 585.0, 195.0, 270.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 585.0, 195.0, 270.0, 24.0 ],
+					"presentation_rect" : [ 585.0, 180.0, 270.0, 24.0 ],
 					"text" : "Set the time-gap between each recording (s)"
 				}
 
@@ -4384,7 +4459,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 585.0, 165.0, 270.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 585.0, 165.0, 270.0, 24.0 ],
+					"presentation_rect" : [ 585.0, 150.0, 270.0, 24.0 ],
 					"text" : "Set the amount of time per sign (s)"
 				}
 
@@ -4441,7 +4516,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 525.0, 195.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 525.0, 195.0, 50.0, 22.0 ]
+					"presentation_rect" : [ 525.0, 180.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -4455,7 +4530,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 525.0, 165.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 525.0, 165.0, 50.0, 22.0 ]
+					"presentation_rect" : [ 525.0, 150.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -4638,7 +4713,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-22", 0 ],
+					"destination" : [ "obj-28", 0 ],
 					"source" : [ "obj-23", 0 ]
 				}
 
@@ -4694,8 +4769,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-28", 0 ],
+					"source" : [ "obj-29", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-123", 0 ],
 					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-28", 0 ],
+					"source" : [ "obj-31", 0 ]
 				}
 
 			}
@@ -4717,13 +4806,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-47", 0 ],
 					"source" : [ "obj-32", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-22", 0 ],
-					"source" : [ "obj-33", 0 ]
 				}
 
 			}
@@ -4860,6 +4942,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-28", 0 ],
+					"source" : [ "obj-35", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-359", 0 ],
 					"source" : [ "obj-358", 0 ]
 				}
@@ -4869,6 +4958,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-25", 0 ],
 					"source" : [ "obj-359", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-23", 0 ],
+					"source" : [ "obj-37", 0 ]
 				}
 
 			}
@@ -4890,6 +4986,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-681", 0 ],
 					"source" : [ "obj-386", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-29", 0 ],
+					"source" : [ "obj-39", 0 ]
 				}
 
 			}
@@ -4937,6 +5040,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-497", 1 ],
 					"source" : [ "obj-407", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-31", 0 ],
+					"source" : [ "obj-41", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-35", 0 ],
+					"source" : [ "obj-44", 0 ]
 				}
 
 			}
@@ -5108,8 +5225,7 @@
 , 			{
 				"name" : "orjan style",
 				"default" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.97911, 0.963068, 0.9712, 1.0 ],
+					"color" : [ 0.037449, 0.035848, 0.03644, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
 						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -5120,9 +5236,10 @@
 						"autogradient" : 0
 					}
 ,
+					"elementcolor" : [ 0.898251, 0.915112, 0.965693, 1.0 ],
 					"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"color" : [ 0.037449, 0.035848, 0.03644, 1.0 ],
-					"elementcolor" : [ 0.898251, 0.915112, 0.965693, 1.0 ]
+					"bgcolor" : [ 0.97911, 0.963068, 0.9712, 1.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
