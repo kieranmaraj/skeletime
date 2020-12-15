@@ -173,8 +173,21 @@ function filter_data(){
     let poseMarkArray = [];
     let handMarkArray = [];
 
+    let HAND_1_RECTANGLE;
+    let HAND_2_RECTANGLE;
+    let hand_1_mark_array = [];
+    let hand_2_mark_array = [];
+
     if(DATA.pose_rect){
         POSE_RECTANGLE = DATA.pose_rect;
+    }
+
+    if(DATA.hand_1_rect){
+        HAND_1_RECTANGLE = DATA.hand_1_rect;
+    }
+
+    if(DATA.hand_2_rect){
+        HAND_2_RECTANGLE = DATA.hand_2_rect;
     }
 
     if(pose_rect_is_active && DATA.pose_rect){
@@ -251,8 +264,11 @@ function filter_data(){
 
             for(let i = 0; i < hand.length; i++){
                 if(hand_landmark_filter[i]){
-                    handMarkArray.push(hand[i].x);
-                    handMarkArray.push(hand[i].y);
+                    hand_1_mark_array.push(hand[i].x);
+                    hand_1_mark_array.push(hand[i].y);
+
+                    // handMarkArray.push(hand[i].x);
+                    // handMarkArray.push(hand[i].y);
 
                     handMarkString += hand[i].x + " ";
                     handMarkString += hand[i].y + " ";
@@ -266,8 +282,11 @@ function filter_data(){
 
             for(let i = 0; i < hand.length; i++){
                 if(hand_landmark_filter[i]){
-                    handMarkArray.push(hand[i].x);
-                    handMarkArray.push(hand[i].y);
+                    hand_2_mark_array.push(hand[i].x);
+                    hand_2_mark_array.push(hand[i].y);
+
+                    // handMarkArray.push(hand[i].x);
+                    // handMarkArray.push(hand[i].y);
 
                     handMarkString += hand[i].x + " ";
                     handMarkString += hand[i].y + " ";
@@ -279,9 +298,10 @@ function filter_data(){
 
     if(USE_LOCAL_COORDS){
         // translate the pose marks so that they are relative to the pose rectangle, not the world space
-        console.log("using local coordinate system...")
+        // console.log("using local coordinate system...")
         poseMarkString = worldToLocalPose(poseMarkArray, POSE_RECTANGLE);
-        handMarkString = worldToLocalPose(handMarkArray, POSE_RECTANGLE);
+        handMarkString = worldToLocalPose(hand_1_mark_array, HAND_1_RECTANGLE);
+        handMarkString += worldToLocalPose(hand_2_mark_array, HAND_2_RECTANGLE);
 
     }
 
@@ -305,23 +325,6 @@ function filter_data(){
 function worldToLocalPose(marks, rect){
 
     let translatedMarks = "";
-    
-
-    {
-        // const landmarks = DATA.pose_landmarks.landmark;
-
-        // Left shoulder is point  - 12
-        // Right shoulder is point - 11
-
-        // let leftShoulder = landmarks[12];
-        // let rightShoulder = landmarks[11];
-
-        // let LS_Point = glMatrix.vec2.fromValues(leftShoulder.x, leftShoulder.y);
-        // let RS_Point = glMatrix.vec2.fromValues(rightShoulder.x, rightShoulder.y);
-
-        // let shoulder_distance = glMatrix.vec2.distance(LS_Point, RS_Point);
-    }
-
     // need the new origin point
     // we have the x and y centres, and the width and height
     
