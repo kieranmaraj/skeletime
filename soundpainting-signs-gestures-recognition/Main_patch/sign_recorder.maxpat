@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 78.0, 800.0, 688.0 ],
+		"rect" : [ -1362.0, 72.0, 800.0, 688.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -139,8 +139,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 600.0, -229.0, 286.0, 22.0 ],
-					"text" : "palette:indicator who:group_indicator shapeline:start"
+					"patching_rect" : [ 600.0, -229.0, 205.0, 22.0 ],
+					"text" : "palette:indicator who:group_indicator"
 				}
 
 			}
@@ -1343,7 +1343,10 @@
 						"styles" : [ 							{
 								"name" : "orjan style",
 								"default" : 								{
+									"elementcolor" : [ 0.898251, 0.915112, 0.965693, 1.0 ],
 									"color" : [ 0.037449, 0.035848, 0.03644, 1.0 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"bgcolor" : [ 0.97911, 0.963068, 0.9712, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
 										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -1354,10 +1357,7 @@
 										"autogradient" : 0
 									}
 ,
-									"elementcolor" : [ 0.898251, 0.915112, 0.965693, 1.0 ],
-									"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-									"bgcolor" : [ 0.97911, 0.963068, 0.9712, 1.0 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2360,8 +2360,6 @@
 									"saved_object_attributes" : 									{
 										"autostart" : 0,
 										"defer" : 0,
-										"node_bin_path" : "",
-										"npm_bin_path" : "",
 										"watch" : 0
 									}
 ,
@@ -5225,7 +5223,10 @@
 , 			{
 				"name" : "orjan style",
 				"default" : 				{
+					"elementcolor" : [ 0.898251, 0.915112, 0.965693, 1.0 ],
 					"color" : [ 0.037449, 0.035848, 0.03644, 1.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.97911, 0.963068, 0.9712, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
 						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -5236,10 +5237,7 @@
 						"autogradient" : 0
 					}
 ,
-					"elementcolor" : [ 0.898251, 0.915112, 0.965693, 1.0 ],
-					"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"bgcolor" : [ 0.97911, 0.963068, 0.9712, 1.0 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
